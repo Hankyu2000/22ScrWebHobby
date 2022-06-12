@@ -45,3 +45,22 @@ body{
     pointer-events: none;
     text-decoration: none;
 }
+
+.anim-fadeIn-0{
+    -webkit-animation: fadeIn 0.5s ease 0s 1 normal;
+    animation: fadeIn 1.5s ease 0s 1 normal;
+}
+
+.anim-fadeIn-1{
+    -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+    animation: fadeIn 1.5s ease 0s 1 normal;
+}
+
+.anim-fadeIn-2{
+    -webkit-animation: fadeIn 2.0s ease 0s 1 normal;
+    animation: fadeIn 1.5s ease 0s 1 normal;
+}
+
+li{
+    list-style: none;
+}
