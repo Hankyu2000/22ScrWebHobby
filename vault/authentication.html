@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<head>
+    <meta charset="UTF-8">
+    <title>ZKDev</title>
+    <link href="../assets/css/common.css" rel="stylesheet"/>
+    <link href="../assets/css/bulma.css" rel="stylesheet"/>
+    <script src="../assets/js/common.js" type="application/javascript"></script>
+    <link rel="icon" type="image/png" href="../assets/img/logo.png"/>
+    <script src="../assets/js/authentication.js"></script>
+</head>
+<body>
+<nav aria-label="main navigation" class="navbar" role="navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item Disabled" href="../index.html" aria-disabled="true">
+            <img height="28" src="../assets/img/logo.png" width="28">
+            <strong>ZKDev</strong>
+        </a>
+
+        <a aria-expanded="false" aria-label="menu" class="navbar-burger" data-target="navbarBasicExample" role="button">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div class="navbar-menu" id="navbarBasicExample">
+        <div class="navbar-start">
+            <a class="navbar-item Disabled" href="../proglang.html" aria-disabled="true">
+                使ってるプログラミング言語
+            </a>
+
+            <a class="navbar-item Disabled" href="../about.html" aria-disabled="true">
+                ZKDevとは？
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable Disabled" aria-disabled="true">
+                <a class="navbar-link" aria-disabled="true">
+                    その他
+                </a>
+
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="../game.html" aria-disabled="true">
+                        ゲーム
+                    </a>
+                    <a class="navbar-item" href="../imagination.html" aria-disabled="true">
+                        架空国家
+                    </a>
+                    <a class="navbar-item" href="../contact.html" aria-disabled="true">
+                        お問い合わせ
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-end">
+
+        </div>
+    </div>
+</nav>
+<main class="content">
+    <section class="section has-background-danger mb-auto" id="warnBox">
+        <div class="container">
+            <h1 class="title has-text-white">警告</h1>
+            <div class="block">
+                <p class="has-text-white">あなたのアクセスしようとしているディレクトリは非公開であり、このディレクトリに無許可でのアクセスを試みることはZKDevに対する敵対行為とみなされます。</p>
+                <p class="has-text-white">この操作が意図したものでないならば、すぐに通信を切断してください。</p>
+                <strong class="has-text-white is-large">このサーバーからの通信が切断されるまで：<span id="count">30</span></strong>
+            </div>
+            <small class="has-text-white is-size-7 is-right">[ZKDev Possible Security Breach Detected] ThreatID: #<span id="threatID">12910</span></small>
+        </div>
+    </section>
+
+    <section class="section has-background-success mb-auto" id="successBox" style="display:none">
+        <div class="container">
+            <h1 class="title has-text-white">成功</h1>
+            <div class="block">
+                <p class="has-text-white">Vaultへのアクセスが承認されました。防御システムは解除されました。　ようこそ、担当者様。</p>
+            </div>
+            <small class="has-text-white is-size-7 is-right">[ZKDev Security Authenticated] ThreatID: NO_LONGER_THREAT</small>
+        </div>
+    </section>
+
+    <section class="section mt-2">
+        <div class="container">
+            <h2 class="title is-3">資格情報を入力せよ</h2>
+            <form id="authForm">
+                <div class="field">
+                    <div class="block">
+                        <label class="label">ユーザID</label>
+                        <div class="control has-icons-left">
+                            <input class="input" type="text" name="name" id="userID" autocomplete="off">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <label class="label">パスワード</label>
+                        <div class="control has-icons-left">
+                            <input class="input" type="password" name="password" id="password" autocomplete="off">
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-key"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="control">
+                            <button class="button" type="submit" id="authButton">認証</button>
+                            <button class="button is-success" id="decryptButton" onclick="location.replace('vaultmenu.html')" style="visibility: hidden"></button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+</body>
+</html>

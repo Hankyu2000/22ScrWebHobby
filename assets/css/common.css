@@ -1,0 +1,47 @@
+@import "bulma.css";
+@import "fonts.css";
+.top-navbar .navbar-item img{
+    width:28px;
+    height:28px;
+}
+
+#tsurezure{
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+}
+
+
+body{
+    -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+    animation: fadeIn 1.5s ease 0s 1 normal;
+    line-break: strict;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.strikeLine{
+    opacity: 35%;
+    text-decoration: line-through;
+}
+
+.Disabled {
+    color: currentColor;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+    opacity: 0.5;
+    text-decoration: none;
+}
+.Disabled > a {
+    color: currentColor;
+    display: inline-block;  /* For IE11/ MS Edge bug */
+    pointer-events: none;
+    text-decoration: none;
+}
