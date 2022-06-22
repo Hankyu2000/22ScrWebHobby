@@ -9,140 +9,172 @@
     <script src="../assets/js/common.js" type="application/javascript"></script>
     <script src="../assets/js/dialog.js" type="application/javascript"></script>
     <script src="../assets/js/vault.js" type="application/javascript"></script>
-    <link rel="icon" type="image/png" href="../assets/img/logo.png"/>
+    <link href="../assets/img/logo.png" rel="icon" type="image/png"/>
 </head>
 <body>
-<nav aria-label="main navigation" class="navbar" role="navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="vaultmenu.html">
-            <img height="28" src="../assets/img/logo.png" width="28">
-            <strong>VAULT</strong>
-        </a>
-
-        <a aria-expanded="false" aria-label="menu" class="navbar-burger" data-target="navbarBasicExample" role="button">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-    </div>
-
-    <div class="navbar-menu" id="navbarBasicExample">
-        <div class="navbar-start">
+<div class="has-background-dark hero is-fullheight">
+    <nav aria-label="main navigation" class="navbar hero-head" role="navigation">
+        <div class="navbar-brand">
             <a class="navbar-item" href="vaultmenu.html">
-                Home
+                <img height="28" src="../assets/img/logo.png" width="28">
+                <strong class="has-text-white">VAULT</strong>
             </a>
 
-            <a class="navbar-item js-modal-trigger" data-target="OpNotAllowed">
-                ファイル送信
-            </a>
-
-            <a class="navbar-item has-text-danger js-modal-trigger" data-target="LogoutConfirmationBox">
-                ログアウト
+            <a aria-expanded="false" aria-label="menu" class="navbar-burger" data-target="navbarBasicExample"
+               role="button">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
             </a>
         </div>
 
-        <div class="navbar-end">
+        <div class="navbar-menu" id="navbarBasicExample">
+            <div class="navbar-start">
+                <a class="navbar-item has-text-white" href="vaultmenu.html">
+                    Home
+                </a>
 
-        </div>
-    </div>
-</nav>
-<main class="content">
-    <section class="section">
-        <div class="container">
-            <h1>ADF-VAULT</h1>
-            <div class="box has-background-success p-3 is-rounded anim-fadeIn-0">
-                <strong class="has-text-white">接続に成功しました。ようこそ、担当者様。 ご希望のファイルを選択してください。</strong>
+                <a class="navbar-item js-modal-trigger has-text-white" data-target="OpNotAllowed">
+                    ファイル送信
+                </a>
+
+                <a class="navbar-item has-text-danger js-modal-trigger has-text-white"
+                   data-target="LogoutConfirmationBox">
+                    ログアウト
+                </a>
             </div>
-            <nav class="menu">
-                <p class="menu-label">Root</p>
-                <ul class="menu-list">
-                    <li class="nomark">
-                        <p>Folder: Publish_Public</p>
-                        <ul>
-                            <li class="nomark"><a href="../index.html">ZKDev.link</a></li>
-                            <li><a class="js-modal-trigger" data-target="ZKDevPros">ZKDevのここがすごい.txt</a></li>
-                        </ul>
-                    </li>
-                    <li class="nomark">
-                        <p class="has-text-danger">Folder: Classified [Access Black Gamma required]</p>
-                        <ul>
-                            <li><a class="js-modal-trigger" data-target="ClassifiedDoc1">[削除執行待ち]除外済みドキュメント1</a></li>
-                            <li><a class="js-modal-trigger" data-target=""></a> </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </section>
-    <div id="ZKDevPros" class="modal">
-        <div class="modal-background"></div>
 
-        <div class="modal-content">
-            <div class="box">
-                <small class="is-marginless">File Viewer</small>
-                <h3 class="tile mt-0">ZKDevのここがすごい.txt</h3>
-                <div class="block">
-                    <p><small>File Name:</small> ZKDevのすごい点[草案]</p>
-                    <small>Working Draft ― Passed June 5 2022</small>
-                    <ul>
-                        <li>AIに対する知識の明るさ</li>
-                        <li>少数精鋭の開発チーム</li>
-                        <li>圧倒的な適応性</li>
+            <div class="navbar-end">
+
+            </div>
+        </div>
+    </nav>
+    <main class="content hero-body pt-0">
+        <section class="section pt-0">
+            <div class="container">
+                <h1 class="has-text-white">ADF-VAULT</h1>
+                <div class="box has-background-success p-3 is-rounded anim-fadeIn-0">
+                    <strong class="has-text-white">接続に成功しました。ようこそ、担当者様。 ご希望のファイルを選択してください。</strong>
+                </div>
+                <nav class="menu">
+                    <p class="menu-label has-text-white">Root</p>
+                    <ul class="menu-list">
+                        <li class="nomark">
+                            <p class="has-text-white">Folder: Publish_Public</p>
+                            <ul>
+                                <li class="nomark"><a class="has-text-white" href="../index.html">ZKDev.link</a></li>
+                                <li><a class="js-modal-trigger has-text-white"
+                                       data-target="ZKDevPros">ZKDevのここがすごい.txt</a></li>
+                            </ul>
+                        </li>
+                        <li class="nomark">
+                            <p class="has-text-danger has-background-white">Folder: Classified [Access Black Gamma
+                                required]</p>
+                            <ul>
+                                <li><a class="js-modal-trigger has-text-white" data-target="ClassifiedDoc1">[削除執行待ち]除外済みドキュメント1</a>
+                                </li>
+                                <li><a class="js-modal-trigger has-text-white" data-target=""></a></li>
+                            </ul>
+                        </li>
                     </ul>
+                </nav>
+            </div>
+        </section>
+        <div class="modal" id="ZKDevPros">
+            <div class="modal-background"></div>
+
+            <div class="modal-content">
+                <div class="box">
+                    <small class="is-marginless">File Viewer</small>
+                    <h3 class="tile mt-0">ZKDevのここがすごい.txt</h3>
+                    <div class="block">
+                        <p><small>File Name:</small> ZKDevのすごい点[草案]</p>
+                        <small>Working Draft ― Passed June 5 2022</small>
+                        <ul>
+                            <li>AIに対する知識の明るさ</li>
+                            <li>少数精鋭の開発チーム</li>
+                            <li>圧倒的な適応性</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
+            <button aria-label="close" class="modal-close is-large"></button>
         </div>
+        <div class="modal" id="OpNotAllowed">
+            <div class="modal-background"></div>
 
-        <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-    <div id="OpNotAllowed" class="modal">
-        <div class="modal-background"></div>
-
-        <div class="modal-content">
-            <div class="box has-background-danger">
-                <small class="is-marginless has-text-white">Operation Denied [ZKDev Vault Defense System]</small>
-                <h3 class="tile mt-0 has-text-white">その操作は許可されていません。</h3>
-                <strong class="has-text-white">この事象はZKDev情報セキュリティ室に記録として保管されます。</strong>
-            </div>
-        </div>
-
-        <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-    <div id="LogoutConfirmationBox" class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
-            <div class="box">
-                <small class="is-marginless">Confirmation</small>
-                <h3 class="tile mt-0">ログアウトしますか？</h3>
-                <button class="button is-danger" onclick="location.replace('../index.html')">はい</button>
-                <button class="button" onclick="document.getElementById('LogoutConfirmationBox').classList.remove('is-active')">いいえ</button>
-            </div>
-        </div>
-
-        <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-    <div id="ClassifiedDoc1" class="modal">
-        <div class="modal-background"></div>
-
-        <div class="modal-content">
-            <div class="box has-background-dark">
-                <small class="is-marginless has-text-white">File Viewer</small>
-                <h3 class="tile mt-0 has-text-white">Excluded_File 00</h3>
-                <div class="block">
-                    <p class="has-text-white"><small>File Name:</small>[情報削除待ち]DC-****について</p>
-                    <span class="has-text-white"><small class="has-text-danger has-background-white">極秘</small> ― 削除執行予定日 June 30 2022</span>
-                    <span class="has-text-white">作成日 June 04 2022</span>
-                    <p class="has-text-white">DC-[自動削除済み]で発生したインシデントについてですが、大規模な損害のため当該DCの継続は不可能と思われます。</p>
-                    <p class="has-text-white">原因は依然として不明ですが、第3冷却パイプ付近に大きな破裂痕がありました。おそらく圧力による破裂だと思われますが、念のため入出場記録を調べておきます。</p>
-                    <p class="has-text-white">今後の情報に注意してください。</p>
-                    <small class="has-text-white">ダグラス・S・カートライト ― DC-[自動削除済み]のセキュリティ管理者</small>
+            <div class="modal-content">
+                <div class="box has-background-danger">
+                    <small class="is-marginless has-text-white">Operation Denied [ZKDev Vault Defense System]</small>
+                    <h3 class="tile mt-0 has-text-white">その操作は許可されていません。</h3>
+                    <strong class="has-text-white">この事象はZKDev情報セキュリティ室に記録として保管されます。</strong>
                 </div>
             </div>
+
+            <button aria-label="close" class="modal-close is-large"></button>
+        </div>
+        <div class="modal" id="LogoutConfirmationBox">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <div class="box">
+                    <small class="is-marginless">Confirmation</small>
+                    <h3 class="tile mt-0">ログアウトしますか？</h3>
+                    <button class="button is-danger" onclick="location.replace('../index.html')">はい</button>
+                    <button class="button"
+                            onclick="document.getElementById('LogoutConfirmationBox').classList.remove('is-active')">いいえ
+                    </button>
+                </div>
+            </div>
+
+            <button aria-label="close" class="modal-close is-large"></button>
+        </div>
+        <div class="modal" id="ClassifiedDoc1">
+            <div class="modal-background"></div>
+
+            <div class="modal-content">
+                <div class="box has-background-dark">
+                    <small class="is-marginless has-text-white">File Viewer</small>
+                    <h3 class="tile mt-0 has-text-white">Excluded_File 00</h3>
+                    <div class="block">
+                        <p class="has-text-white"><small>File Name:</small>[情報削除待ち]DC-****について</p>
+                        <span class="has-text-white"><small class="has-text-danger has-background-white">極秘</small> ― 削除執行予定日 June 30 2022</span>
+                        <span class="has-text-white">作成日 June 04 2022</span>
+                        <p class="has-text-white">DC-[自動削除済み]で発生したインシデントについてですが、大規模な損害のため当該DCの継続は不可能と思われます。</p>
+                        <p class="has-text-white">
+                            原因は依然として不明ですが、第3冷却パイプ付近に大きな破裂痕がありました。おそらく圧力による破裂だと思われますが、念のため入出場記録を調べておきます。</p>
+                        <p class="has-text-white">今後の情報に注意してください。</p>
+                        <small class="has-text-white">ダグラス・S・カートライト ― DC-[自動削除済み]のセキュリティ管理者</small>
+                    </div>
+                </div>
+            </div>
+
+            <button aria-label="close" class="modal-close is-large"></button>
+        </div>
+        <div class="modal" id="ClassifiedDoc2">
+            <div class="modal-background"></div>
+
+            <div class="modal-content">
+                <div class="box has-background-dark">
+                    <small class="is-marginless has-text-white">File Viewer</small>
+                    <h3 class="tile mt-0 has-text-white">Notice_Project_WebКоии</h3>
+                    <div class="block">
+                        <p class="has-text-white"><small>File Name:</small>プロジェクトWebКоииについて</p>
+                        <span class="has-text-white">機密解除待ち<small class="has-text-danger has-background-white"></small> ― 削除執行予定日 June 30 2022</span>
+                        <span class="has-text-white">作成日 June 08 2022</span>
+                        <p class="has-text-white">DC-[自動削除済み]で発生したインシデントについてですが、大規模な損害のため当該DCの継続は不可能と思われます。</p>
+                        <p class="has-text-white">
+                            原因は依然として不明ですが、第3冷却パイプ付近に大きな破裂痕がありました。おそらく圧力による破裂だと思われますが、念のため入出場記録を調べておきます。</p>
+                        <p class="has-text-white">今後の情報に注意してください。</p>
+                        <small class="has-text-white">ダグラス・S・カートライト ― DC-[自動削除済み]のセキュリティ管理者</small>
+                    </div>
+                </div>
+            </div>
+
+            <button aria-label="close" class="modal-close is-large"></button>
         </div>
 
-        <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-
-</main>
+    </main>
+</div>
 </body>
 </html>

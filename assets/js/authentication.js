@@ -2,13 +2,13 @@ var reamingTime = 30;
 window.addEventListener("DOMContentLoaded", function (){
     var elimination = setInterval(count,1000)
     var authForm = document.getElementById("authForm");
-    document.getElementById("threatID").textContent = Math.floor(Math.random() * 100000)
+    document.getElementById("threatID").textContent = Math.floor(Math.random() * 10000000)
     authForm.addEventListener("submit", function (e){
         e.preventDefault();
         var userID = document.getElementById("userID");
         var password = document.getElementById("password");
-        if(userID.value == "Administrator"){
-            if(password.value == "root"){
+        if(userID.value == "Entrenched"){
+            if(password.value == "theAnotherPassword"){
                 document.getElementById("authButton").classList.add("is-loading");
                 document.getElementById("decryptButton").style.visibility = "visible";
                 document.getElementById("decryptButton").classList.add("Disabled");
